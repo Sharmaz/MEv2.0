@@ -27,6 +27,13 @@ body {
   padding-left: 1rem;
 }
 
+.jumbotron {
+  background: url(../images/blue-code.jpg) no-repeat;
+  background-position: left center;
+  //background-size: cover;
+  color: white;
+}
+
 /* Custom page header */
 .header {
   padding-bottom: 0rem;
@@ -125,5 +132,23 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .jumbotron h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .jumbotron h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .jumbotron h1 {
+    font-size: 3.5rem;
   }
 }
