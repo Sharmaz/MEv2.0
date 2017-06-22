@@ -17,12 +17,13 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet"> 
     
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
-  <body data-spy="scroll" data-target="#menu-container">
+  <body data-spy="scroll" data-offset="70" id="Home">
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -30,30 +31,30 @@
     <div class="container-fluid">
       <!-- Menu -->
       <div class="header bg-faded fixed-top" id="menu-container">
-        <nav class="navbar navbar-toggleable-sm navbar-light bg-faded">
+        <nav class="navbar navbar-toggleable-sm navbar-light bg-faded" data-offset="70">
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#">Ivan Robles</a>
+          <a class="navbar-brand" href="/">Ivan Robles</a>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <ul class="navbar-nav nav" id="menu" data-offset="70">
+              <li class="nav-item">
+                <a class="nav-link" href="#Home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Acerca de</a>
+                <a class="nav-link" href="#About">Acerca de</a>
               </li>
               <li class="nav-item">
-               <a class="nav-link" href="#">Experiencia</a>
+               <a class="nav-link" href="#Experience">Experiencia</a>
               </li>
               <li class="nav-item">
-               <a class="nav-link" href="#">Educación</a>
+               <a class="nav-link" href="#Education">Educación</a>
               </li>
               <li class="nav-item">
-               <a class="nav-link" href="#">Portafolio</a>
+               <a class="nav-link" href="#Portfolio">Portafolio</a>
               </li>
               <li class="nav-item">
-               <a class="nav-link" href="#">Contacto</a>
+               <a class="nav-link" href="#Contact">Contacto</a>
               </li>
             </ul>
           </div>
@@ -87,11 +88,11 @@
       <div class="jumbotron">
         <h1 class="display-3">Desarrollador Front-End</h1>
         <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Contactame</a></p>
+        <p><a class="btn btn-lg btn-info" href="#">Contactame</a></p>
       </div>
 
-      <div class="row marketing" id="About">
-        <div class="col-md-12">
+      <div class="row marketing" >
+        <div class="col-md-12" id="About">
           <h2>Acerca de</h2>
         </div>
         <div class="col-lg-6">
@@ -163,9 +164,9 @@
         </div>
       </div>
 
-      <div class="row marketing" id="Contact">
+      <div class="row marketing" id="Portfolio">
         <div class="col-md-12">
-          <h2>Contacto</h2>
+          <h2>Portafolio</h2>
         </div>
         <div class="col-lg-6">
           <h4>Fapdevs</h4>
@@ -181,7 +182,7 @@
           <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis.</p>
         </div>
       </div>
-      <div class="row marketing" id="Portfolio">
+      <div class="row marketing" id="Contact">
         <div class="col-md-12">
           <h2>Contacto</h2>
         </div>

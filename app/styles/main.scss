@@ -11,9 +11,12 @@
 
 /* Space out content a bit */
 body {
+  height: 100%;
   padding-top: 6rem;
   padding-bottom: 1.5rem;
   position: relative;
+  overflow: scroll; 
+  height: 80vh;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -45,6 +48,31 @@ body {
   border-top: .05rem solid #e5e5e5;
 }
 
+/* Navigator Custom */
+
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.nav, .navbar {
+  background-color: #fafafa;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-toggler {
+  color: #4D91DE;
+}
+
+.navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.active {
+  color: #4D91DE;
+}
+
+#menu-container {
+  padding: 0;
+}
+
 /* Customize container */
 @media (min-width: 48em) {
   .container {
@@ -61,8 +89,16 @@ body {
   border-bottom: .05rem solid #e5e5e5;
 }
 .jumbotron .btn {
-  padding: .75rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   font-size: 1.5rem;
+}
+.btn-info, {
+  background-color: #4D91DE;
+  border-color: #4D91DE;
+}
+.btn-info:hover {
+  background-color: #4285d1;
+  border-color: #4285d1;
 }
 
 /* Supporting marketing content */
