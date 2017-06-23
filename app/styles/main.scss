@@ -12,11 +12,16 @@
 /* Space out content a bit */
 body {
   height: 100%;
-  padding-top: 6rem;
+  padding-top: 5rem;
   padding-bottom: 1.5rem;
   position: relative;
   overflow: scroll; 
   height: 80vh;
+}
+.container-fluid {
+  padding-top: 1rem;
+  height: 100%;
+  min-height: 100%;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -27,11 +32,20 @@ body {
   padding-left: 1rem;
 }
 
+.marketing h2 {
+  margin-bottom: 1rem;
+  color: #4D91DE;
+}
+
 .jumbotron {
   background: url(../images/blue-code.jpg) no-repeat;
   background-position: left center;
   //background-size: cover;
   color: white;
+  min-height: 80vh;
+}
+.jumbotron .text-vertical {
+  padding-top: 6.5rem;
 }
 
 /* Custom page header */
@@ -116,6 +130,31 @@ body {
   margin-top: 1.5rem;
 }
 
+h4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* About */
+
+.profile-image {
+  width: 200px;
+}
+
+.skills {
+  padding-top: 1rem;
+}
+.progress {
+  margin-bottom: .5rem;
+}
+ul {
+  padding-left: 1rem;
+}
+li {
+  list-style: none; 
+  //padding-bottom: .5rem;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 48em) {
   /* Remove the padding we set earlier */
@@ -138,6 +177,12 @@ body {
 @media screen and (max-width: 850px) {
   .jumbotron h1 {
     font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .profile-image {
+    width: 300px;
   }
 }
 

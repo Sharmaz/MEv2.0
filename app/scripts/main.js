@@ -8,7 +8,7 @@ $('.navbar li a').click(function(event) {
 $(function() {
   $('.navbar li a').bind('click',function(event){
     var $anchor = $(this);
-    var offset = 70;
+    var offset = 69;
     $('html, body').stop().animate({
       scrollTop: $($anchor.attr('href')).offset().top - offset
     }, 1000,'easeInOutExpo');
