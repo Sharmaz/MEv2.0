@@ -22,11 +22,14 @@ $(function() {
   });
 });
 
+//$('#contactForm').Validator();
+
+/*
 const $form = $('#contactForm')
 const $formGroup = $form.find('.form-group')
 const $formControl = $formGroup.find('.form-control')
 const $formArea = $form.find('.form-area')
-/*
+
 $form.submit(function (ev) {
   ev.preventDefault()
   const error = Math.random() > 0.5
