@@ -17,6 +17,7 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <link rel="stylesheet" href="styles/ihover.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet"> 
     
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -307,32 +308,81 @@
 
       <div class="row marketing" id="Portfolio">
         <div class="col-md-12">
-          <h2>Portafolio</h2>
-        </div>
-        <div class="col-lg-6">
-          <h4>Fapdevs</h4>
-          <p>Refuse to leave cardboard box meow loudly just to annoy owners immediately regret falling into bathtub, all of a sudden cat goes crazy.</p>
-
-          <h4>DeadlineApp</h4>
-          <p>Tofu slow-carb pickled pork belly listicle tumblr godard shaman. Roof party bicycle rights vice intelligentsia chartreuse affogato microdosing flexitarian kinfolk.</p>
-
-          <h4>Instafap</h4>
-          <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.</p>
-
-          <h4>HayBathroom</h4>
-          <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis.</p>
-        </div>
+          <h2 class="text-center">Portafolio</h2>
+          <div class="container d-flex flex-wrap justify-content-around col-md-12">
+            <div class="col-md-6 portfolio-item">
+              <div class="ih-item square effect7"><a href="#">
+                <div class="img"><img src="images/web-angemi.jpg" alt="img"></div>
+                <div class="info">
+                <h3>Fapdevs</h3>
+                <p>Web para compartir información profesional de nicho orientado al desarrollo multimedia.</p>
+                </div></a>
+              </div>
+            </div>
+            <div class="col-md-6 portfolio-item">
+              <div class="ih-item square effect7"><a href="#">
+                <div class="img"><img src="images/web-angemi.jpg" alt="img"></div>
+                <div class="info">
+                <h3>Deadline App</h3>
+                <p>Aplicación de cuenta regresiva para tareas y projectos a una fecha determinada.</p>
+                </div></a>
+              </div>
+            </div>
+            <div class="col-md-6 portfolio-item">
+              <div class="ih-item square effect7"><a href="#">
+                <div class="img"><img src="images/web-angemi.jpg" alt="img"></div>
+                <div class="info">
+                <h3>Instafap</h3>
+                <p>Servicio para compartir fotografías.</p>
+                </div></a>
+              </div>
+            </div>
+            <div class="col-md-6 portfolio-item">
+              <div class="ih-item square effect7"><a href="#">
+                <div class="img"><img src="images/web-angemi.jpg" alt="img"></div>
+                <div class="info">
+                <h3>HayBathroom</h3>
+                <p>Aplicación para encontrar el baño mas cerca de ti, para esos momentos de emergencia.</p>
+                </div></a>
+              </div>
+            </div>
+          </div>
+        
       </div>
-      <div class="row marketing" id="Contact">
+    </div>
+      <div class="row marketing contact" id="Contact">
         <div class="col-md-12">
-          <h2>Contacto</h2>
+          <h2 class="text-center">Contacto</h2>
         </div>
-        <div class="col-lg-6">
+        <div class="col-md-4 text-center contact-data">
           <h4>Telefono</h4>
           <p>775-145-8699</p>
 
           <h4>Email</h4>
           <p>irae45@gmail.com</p> 
+
+          <h4>Dirección</h4>
+          <p>Hacienda del Tepeyac
+              45070 Zapopan, JAL
+              México
+            </p>
+        </div>
+        <div class="col-md-8 contact-form">
+          <form action="https://formspree.io/irae45@gmail.com" method="POST" id="contactForm">
+            <div class="form-group d-inline-flex small-input">
+              <input type="text" class="form-control .form-inline" id="name" name="name" placeholder="Nombre">
+            </div>
+            <div class="form-group d-inline-flex small-input">
+              <input type="email" class="form-control .form-inline" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-group large-input">
+              <input type="text" class="form-control" aria-describedby="nameHelp" placeholder="Asunto">
+            </div>
+            <div class="form-group large-input form-area">
+              <textarea class="form-control" id="message" rows="8" placeholder="Mensaje" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-info form-text">Enviar</button>
+          </form>
         </div>
       </div>
 

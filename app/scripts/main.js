@@ -22,6 +22,36 @@ $(function() {
   });
 });
 
+const $form = $('#contactForm')
+const $formGroup = $form.find('.form-group')
+const $formControl = $formGroup.find('.form-control')
+const $formArea = $form.find('.form-area')
+/*
+$form.submit(function (ev) {
+  ev.preventDefault()
+  const error = Math.random() > 0.5
+  var el;
+  
+  $formGroup.removeClass().addClass('form-group')
+  $formControl.removeClass().addClass('form-control')
+  $formArea.removeClass().addClass('form-control form-area')
+
+  $formGroup.addClass(error ? 'has-danger': 'has-success')
+  $formControl.addClass(error ? 'form-control-has-danger': 'form-control-success')
+  $form.find('.form-control-feedback').remove()
+
+
+  if (error) {
+    el = $('<div>', { html: 'Ha ocurrido un error' })
+  } else {
+    el = $('<div>', { html: 'Mensaje enviado con exito!' })
+  }
+
+  el.addClass('form-control-feedback')
+  $form.find('.form-area').append(el)
+
+}) */
+
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 
 jQuery.extend( jQuery.easing,
