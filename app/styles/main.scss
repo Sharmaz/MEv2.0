@@ -32,7 +32,7 @@ body {
   padding-left: 1rem;
 }
 
-.marketing h2 {
+.marketing h2, .marketing-ex h2 {
   margin-bottom: 1rem;
   margin-top: 1rem;
   color: #4D91DE;
@@ -157,10 +157,13 @@ li {
 }
 
 /* Timeline */
-.container {
-  margin: 1rem;
-  padding: 0;
+
+.marketing-ex .col-sm-12 .container {
+  margin: 1rem auto;
+  padding: 0 !important;
+  width: 98%;
 }
+
 .timeline {
   list-style: none;
   padding: 20px 0 20px;
@@ -179,22 +182,26 @@ li {
 .timeline > li {
   margin-bottom: 20px;
   position: relative;
+  clear: both;
+  display: block;
 }
 .timeline .tl-date-right {
   position: absolute;
   float: left;
-  left: 54%;
-  top: 3.2rem;
+  left: 126%;
+  top: 1.7rem;
   opacity: .7;
-  width: 50%;
+  width: 100%;
+  display: inline-block;
 }
 .timeline .tl-date-left {
   position: absolute;
   float: right;
-  right: 54%;
-  top: 3.2rem;
+  right: 126%;
+  top: 1.7rem;
   opacity: .7;
-  width: 50%
+  width: 100%;
+  text-align: right;
 }
 .timeline > li:before,
 .timeline > li:after {
@@ -213,7 +220,7 @@ li {
   clear: both;
 }
 .timeline > li > .timeline-panel {
-  width: 46%;
+  width: 44%;
   float: left;
   border: 1px solid #d4d4d4;
   border-radius: 0.25rem;
@@ -221,6 +228,7 @@ li {
   position: relative;
   box-shadow: 0 3px 0 #ddd;
   top: 1.5rem;
+  display: block;
 }
 .timeline > li > .timeline-panel:before {
   position: absolute;
@@ -261,6 +269,7 @@ li {
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
+  display: block;
 }
 .fa {
   padding-top: 1.1rem;
@@ -294,6 +303,72 @@ li {
 }
 .timeline-body > p + p {
   margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+    #experience  {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    ul.timeline:before {
+        left: 35px;
+    }
+    ul.timeline > li > .timeline-panel {
+        width: calc(100% - 90px);
+        width: -moz-calc(100% - 90px);
+        width: -webkit-calc(100% - 90px);
+    }
+    ul.timeline > li > .timeline-badge {
+        left: 15px;
+        margin-left: 0;
+        top: 42px;
+        width: 40px;
+        height: 40px;
+    }
+    ul.timeline > li > .timeline-badge > .fa {
+      font-size: 16px;
+      padding-top: 0;
+      line-height: 40px !important;
+      position: relative;
+      bottom: 7px;
+    }
+    ul.timeline > li > .timeline-panel {
+        float: right;
+    }
+    ul.timeline > li > .timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+    ul.timeline > li > .timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+    }
+    .timeline-block {
+    position: relative;
+    clear: both;
+    margin: 2em 0;
+    }
+    .timeline-block:first-child {
+    margin-top: 0;
+    }
+    .marketing-ex .col-sm-12 .container {
+      margin: 0 auto;
+      padding: 0 !important;
+      width: 98%;
+    }
+    .tl-date-left, .tl-date-right {
+      display: inline-block;
+      float: left !important;
+      position: relative !important;
+      top: 6px !important;
+      right: 0 !important;
+      left: 0 !important;
+      width: 100% !important;
+    }
 }
 
 /* Portfolio */
@@ -340,38 +415,18 @@ li {
   margin-top: 1rem;
 }
 
-
-/* by nano */
-@media (max-width: 767px) {
-    ul.timeline:before {
-        left: 40px;
-    }
-    ul.timeline > li > .timeline-panel {
-        width: calc(100% - 90px);
-        width: -moz-calc(100% - 90px);
-        width: -webkit-calc(100% - 90px);
-    }
-    ul.timeline > li > .timeline-badge {
-        left: 15px;
-        margin-left: 0;
-        top: 16px;
-    }
-    ul.timeline > li > .timeline-panel {
-        float: right;
-    }
-    ul.timeline > li > .timeline-panel:before {
-        border-left-width: 0;
-        border-right-width: 15px;
-        left: -15px;
-        right: auto;
-    }
-    ul.timeline > li > .timeline-panel:after {
-        border-left-width: 0;
-        border-right-width: 14px;
-        left: -14px;
-        right: auto;
-    }
+@media (max-width: 767px) { 
+  .contact {
+  padding: 2rem 0 2rem 0!important;
+  }
 }
+
+@media (max-width: 992px) { 
+  .contact {
+  padding: 2rem !important;
+  }
+}
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 48em) {
