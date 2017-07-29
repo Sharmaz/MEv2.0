@@ -398,6 +398,8 @@ li {
 
 }
 .portfolio-item {
+  width: 100% !important;
+  height: 100% !important;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -479,6 +481,9 @@ li {
   .jumbotron h1 {
     font-size: 3.5rem;
   }
+  #Portfolio, #Portfolio .col-md-12, .container-portfolio, .portfolio-item {
+  padding: 1rem 0.5rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -495,6 +500,9 @@ li {
 
 @media screen and (max-width: 550px) {
   .jumbotron h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+  #Portfolio, #Portfolio .col-md-12, .container-portfolio, .portfolio-item {
+  padding: 0;
   }
 }
